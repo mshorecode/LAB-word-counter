@@ -6,10 +6,12 @@ const wordCounter = (value) => {
 
   if (value) {
     // COMPLETE THE LOGIC 
-    wordCount.innerHTML = `Word Count: 0`; 
+    removeSpaces = value.replace(/\s+/g, " ").trim();
+    splitWords = removeSpaces.split(" ");
+    wordCount.innerHTML = `Word Count: ${splitWords.length}`; 
   } else {
     // if the value is empty, set the error message value to "Please input text"
-    error.innerHTML = ""; // UPDATE THIS
+    error.innerHTML = "Please input text"; // UPDATE THIS
   }
 }
 

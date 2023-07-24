@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
   <title>Word Counter</title>
 </head>
 <body>
   <h1>Word Counter</h1>
-  <button id="bg-switch">Dark Mode</button>
+  <button id="bg-switch" class="btn btn-success">Dark Mode</button>
   <div id="error" class="error"></div>
   <form>
-    <textarea placeholder="Place your words here..."></textarea>
-    <button type="submit">Submit</button>
-    <button type="reset">Clear</button>
+    <textarea rows="20" class="form-control" placeholder="Place your words here..." id="floatingTextarea"></textarea>
+    <button type="submit" class="btn btn-success">Submit</button>
+    <button type="reset" class="btn btn-success">Clear</button>
   </form>
   <div id="word-count"></div>
   <script src="main.js"></script>
